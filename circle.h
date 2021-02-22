@@ -17,4 +17,5 @@ public:
 	float computeArea();
 	Circle& operator=(const Circle& circle);
 	Circle operator+(const Circle& circle);
+	friend std::ostream& operator<<(std::ostream& os, const Circle& circle);
 };

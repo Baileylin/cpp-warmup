@@ -17,7 +17,6 @@ Circle::Circle(const Circle& circle) {
 	radius = circle.radius;
 };
 Circle::~Circle() {
-	cout << "destructor" << endl;
 }; 
 
 float Circle::getRadius() {
@@ -33,9 +32,17 @@ float Circle::computeArea() {
 Circle& Circle::operator=(const Circle& circle)
 {
 	radius = circle.radius;
+	return *this;
 }
 Circle Circle::operator+(const Circle& circle)
 {
-	return Circle();
+	Circle outputCircle(this->radius + circle.radius);
+	return outputCircle;
 }
 ;
+
+std::ostream& operator<<(std::ostream& os, const Circle& circle)
+{
+	os << circle.radius;
+	return os;
+}
