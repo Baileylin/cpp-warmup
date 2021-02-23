@@ -6,10 +6,10 @@
 
 class Circle {
 private:
-	float radius;
+	float radius;  //the radius of a circle
 public:
 	Circle();  //default constructor
-	Circle(float input_radius);  //constructor with input
+	Circle(float inputRadius);  //constructor with input
 	Circle(const Circle& circle);  //copy constructor 
 	~Circle();  //destructor
 	float getRadius();  //gettter for radius
