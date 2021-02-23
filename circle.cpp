@@ -1,7 +1,9 @@
+// Name: Yikang Lin
+// Date: Februrary 22, 2021
+
 #include "circle.h"
 #include <cmath>
 #include <numbers>
-
 
 using namespace std;
 

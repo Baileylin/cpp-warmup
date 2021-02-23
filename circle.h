@@ -1,5 +1,5 @@
-// Name:
-// Date:
+// Name: Yikang Lin
+// Date: Februrary 22, 2021
 
 #pragma once
 #include <iostream>
@@ -8,14 +8,14 @@ class Circle {
 private:
 	float radius;
 public:
-	Circle();
-	Circle(float input_radius);
-	Circle(const Circle& circle);
-	~Circle();
-	float getRadius();
-	void setRadius(float input_radius);
-	float computeArea();
-	Circle& operator=(const Circle& circle);
-	Circle operator+(const Circle& circle);
-	friend std::ostream& operator<<(std::ostream& os, const Circle& circle);
+	Circle();  //default constructor
+	Circle(float input_radius);  //constructor with input
+	Circle(const Circle& circle);  //copy constructor 
+	~Circle();  //destructor
+	float getRadius();  //gettter for radius
+	void setRadius(float input_radius);  //setter for radius
+	float computeArea();  //method for calculating area
+	Circle& operator=(const Circle& circle);  //assignment operator
+	Circle operator+(const Circle& circle);  //add operator
+	friend std::ostream& operator<<(std::ostream& os, const Circle& circle);  //output stream operator
 };
